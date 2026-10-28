@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Reverse a string
+        let str = "Hello";
+        let rev = "";
+        for (let i = str.length - 1; i >= 0; i--) {
+            rev = rev + str[i];
+        }
+        console.log(rev);
+        //string is a poalindrome
+        let str1 = "malayalam";
+        let rev1 = "";
+        for (let i = str1.length - 1; i >= 0; i--) {
+            rev1 = rev1 + str[i];
+        }
+        if (str1 === rev1) {
+            console.log("palindrome");
+        }
+        else {
+            console.log("Not a palindrome");
+        }
+        //Largest number in an array
+        let arr = [10, 25, 5, 40, 15];
+        let largest = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > largest) {
+                largest = arr[i];
+            }
+        }
+        console.log("largest number is" + largest);
+        //First element from an array
+        let arr1 = [10, 20, 30, 40, 50];
+        arr1.splice(0, 1);
+        console.log(arr);
+    </script>
+</body>
+
+</html>
